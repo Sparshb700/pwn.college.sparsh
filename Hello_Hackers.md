@@ -1,5 +1,5 @@
 # 1. Intro to Commands
-The question prompted me to invoke my first command on the bash script, 
+The challenge prompted me to invoke my first command on the bash script, 
 The command `whoami` was introduced.
 
 ## My Solve
@@ -29,7 +29,7 @@ In this level, invoke the hello command to get the flag! Keep in mind: commands 
 
 
 # 2. Intro to Arguments
-The program prompted me use arguments with commands,
+The challenge prompted me to use arguments with commands,
 The command "echo" was introduced.
 
 ## My solve
@@ -66,7 +66,7 @@ In this challenge, to get the flag, you must run the hello command (NOT the echo
 
 
 # 3. Command History
-The program prompted me to check the command history 
+The challenge prompted me to check the command history. 
 
 ## My Solve
 **Flag:** `pwn.college{I03CLCPS1A-LXTXFj-K7rPM022D.0lNzEzNxwCM2EDNzEzW}`
