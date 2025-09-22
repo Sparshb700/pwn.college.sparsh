@@ -1,5 +1,5 @@
 # 1. The Root
-The question prompted me to invoke a program called `pwn` by giving its absolute path, using the terminal.<br>
+The question prompted me to invoke a program called `pwn` by giving its absolute path, using the terminal.
 ## My Solve
 **Flag:** `pwn.college{Q7GpIbTTkavylc2SnBJCdcTm-TS.QX4cTO0wCM2EDNzEzW}`
 
@@ -11,10 +11,11 @@ BOOM!!!
 Here is your flag:
 pwn.college{Q7GpIbTTkavylc2SnBJCdcTm-TS.QX4cTO0wCM2EDNzEzW}
 ```
-<br>
+
 ## What I learned
-I learnt to run programs using the bash script, and I learnt what are absolute paths.<br>By pointing to the absolute path of an executable, the program can be executed. <br>`/` points to the root directory.
-<br>
+I learnt to run programs using the bash script, and I learnt what are absolute paths.
+By pointing to the absolute path of an executable, the program can be executed. `/` points to the root directory.
+
 ## References
 The problem statement was the reference used
 ```
@@ -25,10 +26,10 @@ You can invoke a program by providing its path on the command line. In this case
 Start the challenge, launch a terminal, invoke the `pwn` program using its absolute path, and Capture that Flag! Good luck!
 ```
 
-<br><br>
+
 # 2. Program and absolute paths
 The question prompted me to invoke a program called `run` by pointing to its absolute path in the directory `challenge`, using the terminal.
-<br>
+
 ## My Solve
 **Flag:** `pwn.college{QfXr1ZDK-vXtHRPqA-_P0j64ggD.QX1QTN0wCM2EDNzEzW}`
 
@@ -39,10 +40,10 @@ Correct!!!
 /challenge/run is an absolute path! Here is your flag:
 pwn.college{QfXr1ZDK-vXtHRPqA-_P0j64ggD.QX1QTN0wCM2EDNzEzW}
 ```
-<br>
+
 ## What I learned
 I learnt how to run programs by pointing to the absolute path. If they are in a directory, the directory needs to be mentioned in the absolute path.
-<br>
+
 ## References
 The problem statement was the reference used.
 ```
@@ -50,14 +51,14 @@ Let's explore a slightly more complicated path! Except for in the previous level
 
 This challenge again requires you to execute it by invoking its absolute path. You'll want to execute the `run` file that is in the `challenge` directory that is, in turn, in the `/` directory. If you invoke the challenge correctly, it will give you the flag. Good luck!
 ```
-<br><br>
+
 # 3. Position thy self
 The question prompted me to invoke a program called `run` by pointing to its absolute path in the directory `challenge` and by changing my current working directory to a specific directory.
-<br>
+
 ## My Solve
 **Flag:** `pwn.college{AwYWq4bCAVNAJYY4v5Lbtk2oF2O.QX2QTN0wCM2EDNzEzW}`
 
-In the problem statement, it was provided that using `/challenge/run` from a specific directory, the program would be initialized, and thus would provide the flag.<br><br>
+In the problem statement, it was provided that using `/challenge/run` from a specific directory, the program would be initialized, and thus would provide the flag.
 1. Firstly Invoking the `/challenge/run` command, I was prompted with this
 
 ```
@@ -76,10 +77,10 @@ Correct!!!
 Here is your flag:
 pwn.college{AwYWq4bCAVNAJYY4v5Lbtk2oF2O.QX2QTN0wCM2EDNzEzW}
 ```
-<br>
+
 ## What I learned
 I learnt the use of `cd` command, I learned what current working directory is.
-<br>
+
 ## References
 The problem statement was the reference used.
 ```
