@@ -137,4 +137,107 @@ In this challenge, I've put a hundred thousand lines of text into the `/challeng
 HINT: The flag always starts with the text `pwn.college`.
 ```
 
-# 5. Comparing files
+# 5. Comparing Files
+
+The challenge prompted me to use the `diff` command to distinguish between two files, to find the real flag mixed with the decoys.
+
+## My Solve
+
+**Flag:** `pwn.college{sjoNcZjFLEgCJ1-1SIH6AGa9Xm6.01MwMDOxwCM2EDNzEzW}`
+
+First I changed the directory to `challenge` directory and then used the `diff` command to distinguish between the files `decoys_only.txt` and `decoys_and_real.txt`.
+
+```
+
+hacker@commands~comparing-files:~$ cd /challenge
+
+hacker@commands~comparing-files:/challenge$ diff decoys_only.txt decoys_and_real.txt
+
+26a27
+
+> pwn.college{sjoNcZjFLEgCJ1-1SIH6AGa9Xm6.01MwMDOxwCM2EDNzEzW}
+
+```
+
+## What I Learned
+
+I learnt the usage of `diff` command, and its output.
+If it provides `1a2`, that means after line 1 of file 1, add line 2 of file 2.
+## References
+
+The problem statement provided was the reference used.
+
+```
+Now for your challenge! There are two files in /challenge:
+    /challenge/decoys_only.txt contains 100 fake flags
+    /challenge/decoys_and_real.txt contains all 100 fake flags plus the one real flag
+Use diff to find what's different between these files and get your flag!
+```
+
+# 6.  Listing Files
+
+The challenge prompted me to located the `run` binary using the `ls` command in the `challenge` directory.
+## My Solve
+
+**Flag:** `pwn.college{A0sT67nmXpECA2az6Xnqm2s64Tl.QX4IDO0wCM2EDNzEzW}`
+
+First, I changed my directory to `challenge` using `cd` command, then I used `ls` command to locate the new binary file and executed it.
+
+```
+
+hacker@commands~listing-files:~$ cd /challenge
+
+hacker@commands~listing-files:/challenge$ ls
+
+29611-renamed-run-2073  DESCRIPTION.md
+
+hacker@commands~listing-files:/challenge$ ./29611-renamed-run-2073
+
+Yahaha, you found me! Here is your flag:
+
+pwn.college{A0sT67nmXpECA2az6Xnqm2s64Tl.QX4IDO0wCM2EDNzEzW}
+
+```
+
+## What I Learned
+
+I learnt the usage of `ls` command and how it used to list files in a specific directory.
+
+## References
+
+The problem statement provided was the reference used
+
+`In this challenge, we've named /challenge/run with some random name! List the files in /challenge to find it.`
+
+# 7. touching files
+
+The challenge asked me create two files at specified locations and then execute the `run` binary.
+## My Solve
+
+**Flag:** `pwn.college{kixs3012xPNTHE31lgOOItrw1rl.QXwMDO0wCM2EDNzEzW}`
+
+I create the file `pwn` and `college` in the `tmp` directory using the `touch` command. Then I executed the `ran` binary.
+
+```
+
+hacker@commands~touching-files:~$ touch /tmp/pwn
+
+hacker@commands~touching-files:~$ touch /tmp/college
+
+hacker@commands~touching-files:~$ /challenge/run
+
+Success! Here is your flag:
+
+pwn.college{kixs3012xPNTHE31lgOOItrw1rl.QXwMDO0wCM2EDNzEzW}
+
+```
+
+## What I Learned
+
+I learnt the usage of `touch` which is used for the creation of files.
+
+## References
+
+The problem statement provided was the reference used.
+
+`It's that simple! In this level, please create two files: /tmp/pwn and /tmp/college, and run /challenge/run to get your flag!`
