@@ -78,12 +78,12 @@ The problem situated us to search the web for a user `citadweller`'s music journ
 
 1. First I frantically searched for various music platforms, searched `citadweller` on spotify but couldn't find anything there.
 2. Then I tried locating his profile on `last.fm`, and by using the link `https://www.last.fm/user/citadweller`, I was able to open his profile on `last.fm`. 
-![Pasted image 20251008131306.png](Pasted image 20251008131306.png)
+![lastfmimag.png](lastfmimag.png)
 3. Scrolling down to the comments, I was able to locate the first part of the flag which was `citadel{c0mputers_st0pped_exchang1ng_1nf0rmat10n`.
 4. Then I searched `citadweller` on google and in the filters, I selected the `verbatim` setting. And I was able to locate the `rateyourmusic` profile of `citadwller` where the middle part of the flag was located which was `_n_started_shar1ng_st0r1es_`
-![Pasted image 20251008131233.png](Pasted image 20251008131233.png)
+![googlesearch.png](googlesearch.png)
 5.  In there, I was able to locate a tinyurl link `https://tinyurl.com/citadweller` which prompted to his spotify account. A playlist named `OSINT pt2`'s description led to the last flag which was _n_then_they_were_n0where_t0_be_f0und}
-![Pasted image 20251008131600.png](Pasted image 20251008131600.png)
+![spotifyimag.png](spotifyimag.png)
 
 ## References
 The problem statement provided was the reference used.
